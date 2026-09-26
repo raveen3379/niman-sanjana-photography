@@ -1,0 +1,14 @@
+{
+  "[project]/app/components/CameraViewer.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/app/components/CameraViewer.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_three_build_three_core_18d0oq6.js",
+      "static/chunks/node_modules_three_build_three_module_03rsyo6.js",
+      "static/chunks/node_modules_three_build_three_module_1_wgwg8.js",
+      "static/chunks/node_modules_@react-three_fiber_dist_1y-faea._.js",
+      "static/chunks/node_modules_three-stdlib_0_ah7zr._.js",
+      "static/chunks/node_modules_0eycrs9._.js",
+      "static/chunks/app_components_CameraViewer_tsx_19cxtcl._.js"
+    ]
+  }
+}

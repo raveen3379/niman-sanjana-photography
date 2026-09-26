@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --background: #060608;
+  --foreground: #f4f4f6;
+  --gold-accent: #d4af37;
+  --gold-glow: rgba(212, 175, 55, 0.4);
+  --ruby-accent: #e63946;
+  --cinema-blue: #0ea5e9;
+  --dark-surface: #0e0e13;
+  --dark-border: rgba(255, 255, 255, 0.08);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-gold-accent: var(--gold-accent);
+  --color-ruby-accent: var(--ruby-accent);
+  --color-cinema-blue: var(--cinema-blue);
+  --color-dark-surface: var(--dark-surface);
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+  selection-background-color: var(--gold-accent);
+  selection-color: #000;
+}
+
+::selection {
+  background: #d4af37;
+  color: #000;
+}
+
+/* Custom Cinema Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #060608;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272f;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Cinematic Typography and Glow Effects */
+.gold-glow {
+  text-shadow: 0 0 25px rgba(212, 175, 55, 0.6), 0 0 50px rgba(212, 175, 55, 0.25);
+}
+
+.ruby-glow {
+  text-shadow: 0 0 25px rgba(230, 57, 70, 0.7), 0 0 50px rgba(230, 57, 70, 0.35);
+}
+
+.cinema-shadow {
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.95), 0 8px 40px rgba(0, 0, 0, 0.85);
+}
+
+/* Grain & Texture */
+.cinema-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Subtle Film Strip Perforations */
+.film-perforations {
+  background-image: radial-gradient(circle at 10px 10px, rgba(0,0,0,0.9) 5px, transparent 6px);
+  background-size: 20px 20px;
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 6s infinite ease-in-out;
+}
